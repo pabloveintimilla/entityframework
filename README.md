@@ -12,10 +12,20 @@ Discover Entity Framework, a modern ORM designed for .Net with a project to add 
 - Learn the elements of a CRUD to consume data with the Entity Framework
 
 ## Install
-1. Configure project
 
-2. Execute project
+1. Install pre requirements:
+
+- Net SDK
+- Postgres server
+- Postman
+
+2. Configure project
+- Modify appsettings.json to change postgress connection
+
+3. Execute project
 ```bash
 $ dotnet restore
 $ dotnet run
 ```
+
+4. In postman call to /dbconnect (Ex. http://localhost:7233/dbconnect)
