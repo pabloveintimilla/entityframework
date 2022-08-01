@@ -20,12 +20,16 @@ Discover Entity Framework, a modern ORM designed for .Net with a project to add 
 - Postman
 
 2. Configure project
+
 - Modify appsettings.json to change postgress connection
 
-3. Execute project
+3. Run project
+
 ```bash
 $ dotnet restore
 $ dotnet run
 ```
 
-4. In postman call to /dbconnect (Ex. http://localhost:7233/dbconnect)
+4. Import collection of postman from postman.json file and change baseURL param to current URL project
+5. In postman call to /dbconnect (Ex. http://localhost:7233/dbconnect)
+6. Using a postgresql client database
