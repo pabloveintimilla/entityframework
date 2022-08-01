@@ -1,4 +1,4 @@
-# Exercices of "Curso de Fundamentos de Entity Framework"
+# Exercise of "Curso de Fundamentos de Entity Framework"
 
 Check "Curso de Fundamentos de Entity Framework" in https://platzi.com/cursos/entity-framework/
 
@@ -30,6 +30,8 @@ $ dotnet restore
 $ dotnet run
 ```
 
+Check port in console messages
+
 4. Import collection of postman from postman.json file and change baseURL param to current URL project
-5. In postman call to /dbconnect (Ex. http://localhost:7233/dbconnect)
-6. Using a postgresql client database
+5. In postman call to DbConnect request or in a browser go to http://localhost:[port]/dbconnect)
+6. Using a postgresql client database, check database and tables created
