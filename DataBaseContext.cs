@@ -6,8 +6,8 @@ namespace entityframework
     /// Mapping EF with objects
     public class DataBaseContext : DbContext
     {
-        public DbSet<Category>? Categories { get; set; }
-        public DbSet<entityframework.Models.Task>? Tasks { get; set; }
+        public DbSet<Category>? Category { get; set; }
+        public DbSet<entityframework.Models.Task>? Task { get; set; }
 
         /// base(option) is similar a call parent::TaskContext()
         public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options) { }
