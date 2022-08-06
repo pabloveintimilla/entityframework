@@ -18,6 +18,7 @@ Discover Entity Framework, a modern ORM designed for .Net with a project to add 
 - Net SDK
 - Postgres server
 - Postman
+- Dotnet EF
 
 2. Configure project
 
@@ -35,3 +36,11 @@ Check port in console messages
 4. Import collection of postman from postman.json file and change baseURL param to current URL project
 5. In postman call to DbConnect request or in a browser go to http://localhost:[port]/dbconnect)
 6. Using a postgresql client database, check database and tables created
+
+## Migrations
+
+To execute migrations run
+
+```bash
+$ dotnet migrations update
+```

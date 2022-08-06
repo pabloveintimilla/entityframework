@@ -6,6 +6,8 @@ namespace entityframework.Models
     [Table("Task")]
     public class Task
     {
+        private string title;
+
         [Key]
         public Guid TaskId { get; set; }
 
@@ -14,7 +16,7 @@ namespace entityframework.Models
 
         [Required]
         [MaxLength(200)]
-        public string? Title { get; set; }
+        public string Title { get => title; set => title = value; }
         public string? Description { get; set; }
         public Priority? PriorityTask { get; set; }
         public DateTime? DateCreation { get; set; }
